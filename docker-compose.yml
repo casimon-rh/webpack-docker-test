@@ -1,0 +1,16 @@
+version: '3'
+services:
+  test:
+    build:
+      context: .
+    ports:
+      - "80:80"
+    environment:
+      - ROOTS=/=/app/dist
+    networks: 
+      red:
+        aliases:
+          - test
+networks: 
+  red:
+    driver: bridge
