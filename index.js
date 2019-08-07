@@ -2,5 +2,5 @@ import $ from 'jquery'
 import './index.sass'
 
 $(document).ready(() => {
-  $('#findme').html('<h1>html</h1>')
+  $('#findme').html('<h3>I render myself from jquery code!</h3>')
 })
